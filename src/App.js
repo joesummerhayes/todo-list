@@ -52,7 +52,12 @@ class App extends Component {
               handleSubmit={this.handleSubmit}
               editItem={this.state.editItem}
             />
-            <Todolist />
+            <Todolist
+              items={this.state.items}
+              clearList={this.clearList}
+              handleDelete={this.handleDelete}
+              handleEdit={this.handleEdit}
+            />
           </div>
         </div>
       </div>
